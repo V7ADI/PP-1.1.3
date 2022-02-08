@@ -66,12 +66,11 @@ public class User {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return Objects.equals(id, user.id) && Objects.equals(name, user.name) &&
-                Objects.equals(lastName, user.lastName) && Objects.equals(age, user.age);
+        return name.equals(user.name) && lastName.equals(user.lastName) && age.equals(user.age);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, lastName, age);
+        return Objects.hash(name, lastName, age);
     }
 }

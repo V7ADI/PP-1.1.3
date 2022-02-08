@@ -14,10 +14,10 @@ public class Main {
         user.saveUser("Igor", "Igorev", (byte) 30);
         user.saveUser("Pavel", "Pavlov", (byte) 35);
 
-        for (User allUser : user.getAllUsers()) {
-            System.out.println(allUser);
-        }
-        user.cleanUsersTable();
-        user.dropUsersTable();
+        //for (User allUser : user.getAllUsers()) {
+        //    System.out.println(allUser);
+        //}
+        //user.cleanUsersTable();
+        //user.dropUsersTable();
     }
 }
